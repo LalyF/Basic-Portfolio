@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-size: x-large;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 1%;
+ text-align: left;
+}
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(89, 85, 85);
+    color: #fff;
+}
+header h1{
+  padding: 1%;
+  text-align: right;
+  color: rgb(53, 48, 48);
+  width: 400px;
+ background-color:rgb(103, 210, 174);; 
+}
+nav{
+  width: 750px;
+  
+}
+nav ul {
+  font-size: larger;
+  text-decoration: underline;
+  display: flex;
+  justify-content: space-between;
+  min-width: 50px;
+}
+nav a {
+  color: #163100;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+
+.container{
+  
+  text-align: center;
+  display: grid;
+  grid-template-columns: 25% 75% ;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1;
+  margin-top: 5%;
+}
+
+.hero-banner{
+ 
+  background-image: url('/starter/images/02-hero-bg.jpg');
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+  text-align:end;
+}
+.hero-banner div{
+
+  color: black;
+  background-color: rgb(103, 210, 174);
+}
+
+.vertical {
+      border-left: 6px solid rgb(46, 46, 49);
+      height:max-content;
+            left: 50%;
+            margin-top: 5%;
+    }
+.page-section{
+  margin-top: 15%;
+}
+#section-gap{
+  margin-top: 5%;
+}
+
+#contact{
+  margin-top: 15%;
+}
+#project1{
+  background-image: url('/starter/images/02-hero-bg.jpg');
+  height: 150px;
+  background-size: cover;
+  background-position: center;}
