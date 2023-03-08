@@ -106,8 +106,3 @@ nav a:hover {
 #contact{
   margin-top: 15%;
 }
-#project1{
-  background-image: url('/starter/images/02-hero-bg.jpg');
-  height: 150px;
-  background-size: cover;
-  background-position: center;}
