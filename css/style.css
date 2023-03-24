@@ -1,108 +1,274 @@
-* {
+/* URL to import Monserrat google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&display=swap');
+
+/* * Applies style to every page element */
+
+*{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-font-size: x-large;
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  background-color: #EDF2F4;
+  font-family: 'Montserrat';
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
-p {
-  margin: 1%;
- text-align: left;
-}
-header {
-
+header{
+  width: 100%;
+  height: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: rgb(89, 85, 85);
-    color: #fff;
-}
-header h1{
-  padding: 1%;
-  text-align: right;
-  color: rgb(53, 48, 48);
-  width: 400px;
- background-color:rgb(103, 210, 174);; 
-}
-nav{
-  width: 750px;
-  
-}
-nav ul {
-  font-size: larger;
-  text-decoration: underline;
-  display: flex;
   justify-content: space-between;
-  min-width: 50px;
-}
-nav a {
-  color: #163100;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 20px 10px;
+  background: #989FCE;
+
 }
 
-nav a:hover {
-  color: #fff;
+header .logo{
+  margin: 10px;
+  font-size: 30px;
+  color: black
 }
 
 
-.container{
-  
-  text-align: center;
-  display: grid;
-  grid-template-columns: 25% 75% ;
+.navbar ul{
+  display: flex;
 }
 
-.gridContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1;
-  margin-top: 5%;
+
+.navbar ul li a{
+display: block;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+margin: 0 auto;
+padding: 10px 25px;
+color: black;
 }
+
+.navbar ul li a:hover{
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  color: #000608;
+  background-color: #EDAFB8;
+}
+
 
 .hero-banner{
- 
-  background-image: url('/starter/images/02-hero-bg.jpg');
   height: 150px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(../images/02-hero-bg.jpg);
   background-size: cover;
   background-position: center;
-  opacity: .8;
-  text-align:end;
+  opacity: .75;
+  text-align: end;
+  color: rgb(161, 116, 38);
+  font-size:x-large ;
 }
-.hero-banner div{
 
+.container{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin: 10px;
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#categoryGrid {
+  margin: 10px 5%;
+  display:grid ; 
+  grid-template-rows: 300px 250px 250px 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "tt tt"
+  "sn ho"
+  "bs hm"; 
+}
+.categoryGridArea img {
+  width: 100%;
+  height: 100%;
+}
+
+.categoryGridArea:hover {
+  opacity: 0.3;
+  
+}
+
+.categoryGridArea:hover img {
+  transform: scale(1.1);
+}
+
+.heading a{
+  background-color: #EDF2F4;
+  color: #000608;
+
+}
+
+#Portfolio1 {
+    grid-area: tt;
+  background-image: url("../images/project1.jpg");
+
+}
+#Portfolio2 {
+   grid-area: sn;
+  background-image: url("../images/WellnessWarrior.jpg");
+}
+
+#Portfolio3 {
+  grid-area: ho;
+  background-image: url("../images/READMEgenereator.jpg");
+}
+
+#Portfolio4 {
+   grid-area: hm;
+  background-image: url("../images/nutriverse.jpg");
+}
+
+#Portfolio5 {
+  grid-area: bs;
+ background-image: url("../images/passwordgenerator.jpg");
+}
+
+#about {
+  background-color: #eee2d5;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-right: 6px solid rgb(75, 74, 74);
+ }
+
+ .content{
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content img{
+  height: 30vh;
+  padding-bottom: 3%;
+  /* border-radius: 60%; */
+}
+
+ #work {
+  background-color: #D9D9D9;
+  padding: 10px;
+  margin-right: 10px;
+  border-right: 6px solid rgb(75, 74, 74);
+  margin-bottom: 30px;
+  
+
+ }
+
+ #contact {
+  background-color: #D9D9D9;
+  padding: 10px;
+  margin-right: 10px;
+  border-right: 6px solid rgb(75, 74, 74);
+ }
+
+.contact-links{
+  color: #000608;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.contact-links a{
+  color: #000608;
+  text-decoration: underline;
+}
+
+.contact-links a:hover{
+  display: inline;
+  width: 100px;
+  height: 25px;
+  padding: 5px;
+  background-color: #a2aade
+}
+
+
+footer{
+  
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    background: #989FCE;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.90rem;
+}
+
+footer span{
   color: black;
-  background-color: rgb(103, 210, 174);
+  font-weight: bold;
 }
 
-.vertical {
-      border-left: 6px solid rgb(46, 46, 49);
-      height:max-content;
-            left: 50%;
-            margin-top: 5%;
-    }
-.page-section{
-  margin-top: 15%;
-}
-#section-gap{
-  margin-top: 5%;
-}
 
-#contact{
-  margin-top: 15%;
+/* Media queries to apply different styles for different media screens e.g. Mobile or Tablet*/
+@media screen and (max-width: 768px) {
+ 
+  body{
+    background-color: white;
+    font-size: 16px;
+  }
+
+  .container{
+    margin: 0;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .navbar ul li a{
+  font-size: 20px;
+    
+  }
+
+  #about h2 {
+    font-size: 16px;
+
+  }
+
+  .content p{
+    padding-bottom: 6%;
+    font-size: 15px;
+  }
+
+  .content img{
+    display: none;
+  }
+
+  #work h2{
+    font-size: 16px;
+
+  }
+
+  #contact h2{
+    font-size: 16px;
+
+  }
+
+  footer{
+    height: 3vh;
+  }
+  
+
 }
